@@ -4,5 +4,5 @@ validation_bbox: https://storage.googleapis.com/openimages/v5/validation-annotat
 train_bbox: https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv
 test_ann: https://storage.googleapis.com/openimages/v5/test-annotations-human-imagelabels-boxable.csv
 validation_ann: https://storage.googleapis.com/openimages/v5/validation-annotations-human-imagelabels-boxable.csv
-train_ann: https://storage.googleapis.com/openimages/v5/train-annotations-human-imagelabels-boxable.to_csv
+train_ann: https://storage.googleapis.com/openimages/v5/train-annotations-human-imagelabels-boxable.csv
 downloader_ulr: https://raw.githubusercontent.com/openimages/dataset/master/downloader.py

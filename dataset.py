@@ -37,8 +37,8 @@ def load_data_openimages(
         import botocore
     except:
         print("installing boto3 and botocore for downloader by openimages ...")
-        os.system("{} pip install -q boto3".format(python_path))
-        os.system("{} pip install -q botocore".format(python_path))
+        os.system("{} -m pip install -q boto3".format(python_path))
+        os.system("{} -m pip install -q botocore".format(python_path))
 
     os.system("{} {} {} --download_folder={} --num_processes={}".format(
         python_path, downloader_path, loader_list,
@@ -132,7 +132,7 @@ class OpenImagesDataset(Dataset):
         root: str,
         part: str,
         class_names: Optional[List[str]] = None,
-        transforms: Optional[transforms] = None
+        transforms: Optional[transforms.Compose] = None
     ) -> None:
         self.root = root
         self.part = part
